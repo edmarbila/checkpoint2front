@@ -1,0 +1,8 @@
+/*Estilo Aplicado em todo o HTML*/
+html * {margin: 0%}
+
+/*Estilo Aplicado no Header*/
+.header {margin: 0;background-color: rgb(179, 255, 0);}
+.header__cabecalho{background-color: aqua;}
+.header__login--botao{display: inline;}
+

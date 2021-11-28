@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortaleza-CE</title>
+    
+    <link rel="shortcut icon" type="imagex/png" href="Imagens/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+
+
+    </style>
+
+</head>
+
+<!--Adicionei um Header e coloquei o titulo, barra de pesquisa e um Botão de login-->
+<header class="header">
+
+    <div class="header__cabecalho">
+
+        <h1 class="header__titulo--texto">Fortaleza</h1></div>
+
+        <div class="header__titulo">
+
+           <h2 class="header__cabecalho-sadacao">Ola, turista</h2>
+
+        <div class="header__cabecalho--pesquisa">
+
+    </div>
+
+    <div class="header__login">
+
+            <button class="header__login--botao">Cadastrado? Faça Login Aqui</button>
+            
+    </div>
+
+        <div class="header__cabecalho--linha"></div>
+
+    </div>
+
+</header>
+
+<body>
+
+    <main class="contato">
+
+        <h3 class="constato__instrucoes">É novo por aqui? Preencha o Formulario Abaixo</h3>
+        
+        <form action="/contato" class="formulario" method="POST">
+
+            <div class="formulario__grupo">
+                <!--Campos Obrigatórios-->
+                <div>
+                    <label 
+                        class="contato__rotulo" 
+                        for="nome">Nome completo
+                    </label>
+
+                    <input 
+                        class="contato__campo"
+                        name="nome" 
+                        id="nome"
+                        type="text" 
+                        maxlength="100"
+                        placeholder="Digite seu nome"
+                        required>
+                        <small>até 100 caracteres</small>
+                </div>
+
+                <div>
+                    <label 
+                        class="email__rotulo" 
+                        for="e-mail">E-mail</label>
+                    <input class="email__campo"
+                        name="e-mail"
+                        id="e-mail"
+                        type="text"
+                        placeholder="Digite seu e-mail"
+                        required>
+                </div>
+
+                <div>
+                    <label 
+                        class="tel__rotulo" 
+                        for="telefone">Telefone</label>
+                    <input class="tel__campo" 
+                        name="telefone" 
+                        id="telefone" 
+                        type="tel"
+                        placeholder="+55 (__) ____________"
+                        required>
+                        <small>somente numeros</small>
+                </div>
+
+                <div>
+                    <label 
+                        class="data__rotulo" 
+                        for="data__nascimento">Data de Nascimento</label>
+                    <input class="data__campo" 
+                        name="data__nascimento" 
+                        id="data__nascimento" 
+                        type="date"     
+                        required>
+                </div>
+                <!--Campos Opcionais-->
+                <div>
+                    <h4>Você é maior de 18 anos?</h4>
+                    <input class="maior__idade"
+                        name="idade"
+                        id="idade"
+                        type="radio"
+                        value="maior__18">
+                    <label for="Sim">Sim</label>
+                    <input class="menor__idade" 
+                        name="idade" 
+                        id="idade" 
+                        type="radio" 
+                        value="menor__18">
+                    <label for="Não">Não</label>    
+                </div>
+
+                <div>
+                    <h3>Quais seus pontos de interesse na cidade?</h3>
+                    <input class="pontos__interesses"
+                        name="pontos"
+                        id="beach__park"
+                        type="checkbox"
+                        value="beach__park">
+                    <label for="beach__park">Beach Park</label>
+
+                    <input class="pontos__interesses" 
+                            name="pontos" 
+                            id="canoa__quebrada" 
+                            type="checkbox" 
+                            value="canoa__quebrada">
+                    <label for="canoa__quebrada">Canoa Quebrada</label>
+
+                    <input class="pontos__interesses" 
+                            name="pontos" id="dragao__mar"
+                            type="checkbox" 
+                            value="dragao__mar">
+                    <label for="dragao__mar">Dragão do Mar</label>
+
+                    <input class="pontos__interesses" 
+                            name="pontos" 
+                            id="iracema" 
+                            type="checkbox" 
+                            value="iracema">
+                    <label for="iracema">Praia de Iracema</label>
+
+                    <input class="pontos__interesses" 
+                            name="pontos" 
+                            id="museu__cachaça" 
+                            type="checkbox" 
+                            value="museu__cachaça" >
+                    <label for="museu__cachaça" >Museu da Cachaça</label>
+
+                    <input class="pontos__interesses" 
+                            name="pontos" 
+                            id="teatro__ja" 
+                            type="checkbox" 
+                            value="teatro__ja" >
+                    <label for="teatro__ja" >Theatro José de Alencar</label>
+                </div>
+
+                <div>
+                    <h3>Quais seus interesses na cidade?</h3>
+                    <select name="select">
+                        <optgroup label="">
+                            <option value="turista">Turista</option>
+                            <option value="residente">Residente</option>
+                            <option value="estudante">Estudante</option>
+                            <option value="estudante">A trabalho</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                        <!--Botão resetar dados do formulário (só funciona se tiver a tag form)-->
+                        <div class="boton__apagar">
+                            <input type="reset" value="Apagar" />
+                        </div>
+
+                        <!--Botão de envio dos dados do formulário-->
+                        <div class="boton__enviar"> 
+                            <input type="submit" value="Enviar"/>
+                        </div>
+                        
+                            
+                    </select>
+                </div>
+                
+                
+
+            </div>
+            
+                
+            
+        </form>
+        </main>
+    
+</body>
+
+<footer>  
+
+<!--Rodapé com Links para redes sociais oficiais de Fortaleza-CE-->
+
+    <h4 class="redes"> Redes Sociais</h4>
+
+    <div class="redes__links">
+
+        <div class="redes__links--instagram">
+              <a href="https://www.instagram.com/fortalezacearaoficial/" target="_blank "><img src="Imagens/instagram2.png" width="40" height="40" class="icones "></a>
+        </div>
+
+        <div class="redes__links--youtube">
+             <a href="https://www.youtube.com/user/prefeiturafortaleza" target="_blank "><img src="Imagens/youtube2.png" width="40" height="40" class="icones "></a>
+        </div>
+
+        <div class="redes__links--twitter">
+             <a href="https://twitter.com/prefeiturapmf?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank "><img src="Imagens/twitter2.png" width="40" height="40" class="icones "></a>
+        </div>
+
+        <div class="redes__links--facebook">
+             <a href="https://www.facebook.com/PrefeituradeFortaleza/" target="_blank "><img src="Imagens/facebook2.png" width="40" height="40" class="icones "></a>
+        </div>
+    
+    </div>
+
+
+</footer>
+
+</html>
